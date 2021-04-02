@@ -5,7 +5,7 @@ services:
     image: gitea/gitea:1.13.6
     container_name: gitea
     environment:
-      - ROOT_URL=http://localhost:3000
+      - ROOT_URL=http://172.30.0.5:3000
       - APP_NAME="GITEA"
       - RUN_MODE="prod"
       - DISABLE_REGISTRATION=true
