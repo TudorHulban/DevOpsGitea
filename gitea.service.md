@@ -1,6 +1,6 @@
 ## gitea.service
 Copy file in `/etc/systemd/system/gitea.service`.
-```
+```bash
 [Unit]
 Description=Gitea (Git with a cup of tea)
 After=syslog.target
