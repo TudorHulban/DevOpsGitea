@@ -23,6 +23,18 @@ services:
       gitea:
        ipv4_address: 172.30.0.5
 
+
+  plantuml:
+    image: 'plantuml/plantuml-server:tomcat'
+    container_name: plantuml
+    
+    ports:
+      - "8000:8080"
+    networks:
+      gitea:
+       ipv4_address: 172.30.0.6
+
+
   drone-server:
     image: drone/drone:1.2.1
     container_name: drone-server
